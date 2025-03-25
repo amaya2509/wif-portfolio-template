@@ -11,8 +11,8 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ toggleDarkMode, isDarkMode }) => {
   return (
-    <header className={`py-8 ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-900'}`}>
-      <div className="max-w-4xl mx-auto text-center">
+    <header className={`${isDarkMode ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-900'}`}>
+      {/* <div className="max-w-4xl mx-auto text-center">
         
         <motion.h1 
             className='text-5xl font-bold'
@@ -31,13 +31,13 @@ const Header: React.FC<HeaderProps> = ({ toggleDarkMode, isDarkMode }) => {
             >
                 {siteConfig.description}
         </motion.p>
-      </div>
+      </div> */}
 
 
       {/* Navbar for section links */}
-      <nav className="bg-gray-700 text-white p-4 mt-6 flex justify-between items-center">
+      <nav className="bg-blue-950 text-white p-4 flex justify-between items-center">
         {/* Navbar Links (Responsive) */}
-        <ul className="flex space-x-6 sm:space-x-4 md:space-x-8">
+        <ul className="flex space-x-6 sm:space-x-4 md:space-x-8 ">
           <li>
             <a href="#about" className="hover:text-blue-400">About</a>
           </li>

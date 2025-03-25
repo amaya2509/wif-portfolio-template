@@ -14,12 +14,12 @@ const App: React.FC = () =>{
   const toggleDarkMode = () =>{
     setIsDarkMode(!isDarkMode);
   };
-
+// p-6 space-y-8
   return(
     <div className={`${isDarkMode ? 'dark' : ''} min-h-screen bg-gray-50`}>
       <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} /> 
 
-      <main className="p-6 space-y-8">
+      <main className=""> 
         <About />
         <Projects />
         <Skills />
