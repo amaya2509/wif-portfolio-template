@@ -1,5 +1,6 @@
 import { projects } from "../data/projects";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import {motion} from 'framer-motion';
 
 const Projects = () => {
   return (
@@ -13,7 +14,13 @@ const Projects = () => {
         </p>
 
         {/* Project Cards Grid */}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+>
+
           {projects.map((project) => (
             <div
               key={project.id}
@@ -64,7 +71,7 @@ const Projects = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
