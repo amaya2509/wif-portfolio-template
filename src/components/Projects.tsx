@@ -66,7 +66,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="text-gray-700 dark:text-gray-300 hover:underline flex items-center"
                 >
-                  Code <FaGithub className="ml-1" />
+                  <FaGithub className="ml-1" />
                 </a>
               </div>
             </div>
